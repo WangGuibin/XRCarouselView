@@ -238,6 +238,7 @@ typedef enum{
 #pragma mark 设置pageControl的图片
 - (void)setPageImage:(UIImage *)pageImage andCurrentImage:(UIImage *)currentImage {
     if (!pageImage || !currentImage) return;
+    //TODO: runtime
     [self.pageControl setValue:currentImage forKey:@"_currentPageImage"];
     [self.pageControl setValue:pageImage forKey:@"_pageImage"];
 }
@@ -284,7 +285,7 @@ typedef enum{
 
 #pragma mark 图片点击事件
 - (void)imageClick {
-    !self.imageClickBlock?:self.imageClickBlock(self.currIndex);
+    !self.imageClickBlock? nil : self.imageClickBlock(self.currIndex);
 }
 
 #pragma mark 下载网络图片
