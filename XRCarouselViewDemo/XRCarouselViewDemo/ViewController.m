@@ -20,11 +20,15 @@
     //本地图片
     NSArray *arr1 = @[[UIImage imageNamed:@"1.jpg"], [UIImage imageNamed:@"2.jpg"], [UIImage imageNamed:@"3.jpg"]];
     //网络图片
-    NSArray *arr2 = @[@"http://www.5068.com/u/faceimg/20140725173411.jpg", @"http://file27.mafengwo.net/M00/52/F2/wKgB6lO_PTyAKKPBACID2dURuk410.jpeg", @"http://file27.mafengwo.net/M00/B2/12/wKgB6lO0ahWAMhL8AAV1yBFJDJw20.jpeg"];
+    NSArray *arr2 = @[@"http://oss-cn-hangzhou.aliyuncs.com/ydd/operation/69ad3bbb07ab021a756d34f3e98fb388", @"http://file27.mafengwo.net/M00/52/F2/wKgB6lO_PTyAKKPBACID2dURuk410.jpeg", @"http://file27.mafengwo.net/M00/B2/12/wKgB6lO0ahWAMhL8AAV1yBFJDJw20.jpeg"];
     //既有本地图片也有网络图片
-    NSArray *arr3 = @[@"http://www.5068.com/u/faceimg/20140725173411.jpg", [UIImage imageNamed:@"2.jpg"], @"http://file27.mafengwo.net/M00/52/F2/wKgB6lO_PTyAKKPBACID2dURuk410.jpeg", [UIImage imageNamed:@"1.jpg"]];
+    NSArray *arr3 = @[@"http://www.5068.com/u/faceimg/20140725173411.jpg", 
+@"http://oss-cn-hangzhou.aliyuncs.com/ydd/operation/6f88c9a8cdafaadd0204dcd822e6e2a2", @"http://oss-cn-hangzhou.aliyuncs.com/ydd/operation/69ad3bbb07ab021a756d34f3e98fb388", @" http://oss-cn-hangzhou.aliyuncs.com/ydd/operation/5cb3dc7fd08a0901f0cfc283146d4391"];
     
-    
+  /*http://oss-cn-hangzhou.aliyuncs.com/ydd/operation/6f88c9a8cdafaadd0204dcd822e6e2a2,
+     http://oss-cn-hangzhou.aliyuncs.com/ydd/operation/69ad3bbb07ab021a756d34f3e98fb388,
+     http://oss-cn-hangzhou.aliyuncs.com/ydd/operation/5cb3dc7fd08a0901f0cfc283146d4391,
+     http://oss-cn-hangzhou.aliyuncs.com/ydd/operation/e5a18bcaf0f7ab7ad09392c83005c06a*/
     //创建方式1
 //    self.carouselView = [[XRCarouselView alloc] initWithFrame:CGRectMake(0, 100, 375, 180)];
 //    self.carouselView.imageArray = arr3;
